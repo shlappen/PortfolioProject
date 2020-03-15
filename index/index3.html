@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Simply Me</title>
+  <title>Shae Lappen Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,16 +9,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
-
-  <style>
-
-  </style>
 </head>
 <body>
 
 <!-- Navbar -->
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+        <div class="container-fluid" bottom-margin="10px
+        ">
             <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -31,6 +27,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#About">About</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Hire_Me">Hire Me</a></li>
@@ -46,22 +44,20 @@
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Hi.</h3>
   <img src="images/picture.jpg" class="img-responsive img-circle margin" style="display:inline" alt="images/oaktrees.jpg" width="350" height="350">
-  <h3>My name is Shae.</h3>
+  <h3 class="margin">My name is Shae.</h3>
+  <h3>When I grow up, I want to be a software developer.</h3>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
+  <h3 class="margin"><a id="About"></a>About Me</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#About" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
+<div class="container-fluid text-center">  
+  <h3 class="margin"><a id="Projects"></a>Projects</h3><br>
+  <div class="row background-image-container">
     <div class="col-sm-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
@@ -74,11 +70,27 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
-  </div>
+   </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
+    <h3 class="footermargin"><a id="Hire_Me"></a>Hire Me</h3><br>
     <p>Shae Lappen</p>
     <p>920-323-3987</p>
     <a href="mailto:shaelappen@gmail.com"><p>shaelappen@gmail.com</p></a>
