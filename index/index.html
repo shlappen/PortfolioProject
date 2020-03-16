@@ -5,107 +5,98 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-top: 0;
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Shae Lappen</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Hire_Me">Hire Me</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <hr>
-      <div class= "col-sm-8 image-left">
-            <img src="images/picture.jpg" alt="Portfolio/images/Rowdyno.png" width="300px">
-    </div>
-    <p>I am trying to be a software developer.  I will remove the word "trying" from this text when I become one.</p>
-    <div>
-    </div>
-      <div class = "col-sm-8 text-left "> 
-          <p>This is a picture.</p>
-      </div>
-      <div class="col-sm-8 text-left">
-      <h3><a id="About"></a>About</h3>
-      <p>This is a paragraph.</p>
-      </div>
-      <div class="col-sm-8 text-left">
-        <h3><a id="Project"></a>Projects</h3>
-        <p>This is a table.</p>
+<!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" bottom-margin="10px">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                <a class="navbar-brand" href="#">Shae Lappen Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Hire_Me">Hire Me</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
-
-    <div class="col-sm-2 sidenav">
-    </div>
-  </div>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Hi.</h3>
+  <img src="images/picture.jpg" class="img-responsive img-circle margin" style="display:inline" alt="images/Rowdyno.png" width="350" height="350">
+  <h3 class="margin">My name is Shae.</h3>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Shae Lappen</p>
-  <p>920-323-3987</p>
-  <a href="mailto:shaelappen@gmail.com"><p>shaelappen@gmail.com</p></a>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin"><a id="About"></a>About Me</h3>
+  <p>When I grow up, I want to be a software developer.</p>
+</div>
 
+<!-- Third Container (Grid) -->
+<div class="container-fluid text-center">  
+    <h3><a id="Projects"></a>Projects</h3><br>
+    <hr>
+    <div class="row">
 
+      <div class="col-sm-4">
+        <a href ="https://github.com/shlappen/SweepstakesRepo"><p>Sweepstakes Marketing Firm Application</p></a>
+        <a href ="https://github.com/shlappen/SweepstakesRepo"><div class="img img-responsive margin" style="background-image: url(images/sweepstakes.png)"></div></a>
+      <h5>Back end logic for a sweepstakes business that exemplifies dependency injection with queue and stack data structures.</h5>
+      </div>
+
+      <div class="col-sm-4">
+        <a href ="https://github.com/shlappen/LemonadeStandGame"><p>Lemonade Stand Console Game</p></a>
+          <a href ="https://github.com/shlappen/LemonadeStandGame"><div class="img img-responsive margin" style="background-image: url(images/lemonade.png)"></div></a>
+        <h5>A showcase of single responsibility and open/closed SOLID design principles, this project is also a fully functional console game with randomly-generated weather and temperature that affect customer demand!</h5>
+      </div>
+
+      <div class="col-sm-4"> 
+        <a href ="https://github.com/shlappen/CustomListProjectRepo"><p>Custom List</p></a>
+        <a href ="https://github.com/shlappen/CustomListProjectRepo"><div class="img img-responsive margin" style="background-image: url(images/customlist.png)"></div></a>
+      <h5>This project reimagines how Microsoft created the versatile List&lt;T&gt; class in the .Net Framework--without using any built-in List or Array methods or properties.</h5>
+      </div>
+</div>
+        <hr>
+    <!--Third Container Second Row-->
+    <div class="row">
+        <div class="col-sm-4">
+          <p>Project 4 Title</p>
+          <img src="images/tbd.jpg" class="center img-responsive margin" alt="images/Rowdyno.png">
+          <h5>Project description</h5>
+        </div>
+        <div class="col-sm-4"> 
+          <p>Project 5 Title</p>
+          <img src="images/tbd.jpg" class="center img-responsive margin" alt="images/Rowdyno.png">
+          <h5>Project description</h5>
+        </div>
+        <div class="col-sm-4"> 
+          <p>Project 6 Title</p>
+          <img src="images/tbd.jpg" class="center img-responsive margin" alt="images/Rowdyno.png">
+          <h5>Project description</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <h3 class="footermargin"><a id="Hire_Me"></a><a href="mailto:shaelappen@gmail.com">Hire Me</h3><br></a>
+    <p>Shae Lappen</p>
+    <p>920-323-3987</p>
+    <a href="mailto:shaelappen@gmail.com"><p>shaelappen@gmail.com</p></a>
 </footer>
 
 </body>
